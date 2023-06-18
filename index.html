@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Game</title>
+  </head>
+  <body>
+    <!-- Game -->
+    <canvas class="webgl"></canvas>
+
+    <div class="center overlay"></div>
+
+    <!-- UI -->
+
+    <!-- Start screen -->
+
+    <div class="start-screen center">
+      <div class="game-title">Game</div>
+      <button class="start-button">Start</button>
+    </div>
+
+    <!-- Pause screen -->
+
+    <div class="pause-screen center hidden">
+      <div class="pause-title hidden">Paused</div>
+      <button class="pause-button hidden">Resume game</button>
+    </div>
+
+    <!-- Crosshair -->
+    <span class="center pointer hidden"></span>
+    <!-- Scanning UI -->
+    <span class="center scan-circle scan-circle-fill"></span>
+    <span class="center scan-circle scan-circle-progress"></span>
+    <span class="center scan-indicator">Scanning</span>
+
+    <!-- Planet description -->
+    <div class="description-container hidden">
+      <div class="description-header"></div>
+      <div class="description-line-0"></div>
+      <div class="description-line-1"></div>
+      <div class="description-line-2"></div>
+      <div class="description-line-3"></div>
+      <div class="description-line-4"></div>
+    </div>
+
+    <!-- Alerts -->
+    <div class="alert hidden">
+      <svg
+        version="1.1"
+        id="Capa_1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 0 416.979 416.979"
+        xml:space="preserve"
+      >
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g
+          id="SVGRepo_tracerCarrier"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></g>
+        <g id="SVGRepo_iconCarrier">
+          <g>
+            <path
+              d="M356.004,61.156c-81.37-81.47-213.377-81.551-294.848-0.182c-81.47,81.371-81.552,213.379-0.181,294.85 c81.369,81.47,213.378,81.551,294.849,0.181C437.293,274.636,437.375,142.626,356.004,61.156z M237.6,340.786 c0,3.217-2.607,5.822-5.822,5.822h-46.576c-3.215,0-5.822-2.605-5.822-5.822V167.885c0-3.217,2.607-5.822,5.822-5.822h46.576 c3.215,0,5.822,2.604,5.822,5.822V340.786z M208.49,137.901c-18.618,0-33.766-15.146-33.766-33.765 c0-18.617,15.147-33.766,33.766-33.766c18.619,0,33.766,15.148,33.766,33.766C242.256,122.755,227.107,137.901,208.49,137.901z"
+            ></path>
+          </g>
+        </g>
+      </svg>
+      <span></span>
+    </div>
+
+    <!-- Objectives -->
+    <div class="objectives">
+      <div>Objectives</div>
+
+      <ul>
+        <li>Move with WASD</li>
+        <li>Look around with mouse</li>
+        <li>Scan 5 objects</li>
+      </ul>
+    </div>
+
+    <!-- Databook -->
+
+    <div class="databook-container hidden">
+      <div class="databook-title">Databook</div>
+
+      <div class="databook-content">
+        <div class="databook-item">Empty</div>
+        <div class="databook-item">Empty</div>
+        <div class="databook-item">Empty</div>
+
+        <div class="databook-item">Empty</div>
+        <div class="databook-item">Empty</div>
+        <div class="databook-item">Empty</div>
+
+        <div class="databook-item">Empty</div>
+        <div class="databook-item">Empty</div>
+        <div class="databook-item">Empty</div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls-container top-container hidden">
+      <div class="control-box click-box">Left Click to Scan</div>
+    </div>
+
+    <div class="controls-container hidden">
+      <div>
+        <div class="control-box button-box"></div>
+        <div class="control-box button-box">w</div>
+        <div class="control-box button-box">E</div>
+      </div>
+
+      <div>
+        <div class="control-box button-box">a</div>
+        <div class="control-box button-box">s</div>
+        <div class="control-box button-box">d</div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
