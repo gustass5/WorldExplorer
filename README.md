@@ -1,8 +1,6 @@
 # World Explorer
 Procedurally generated world exploration prototype.
 
-Inspired by Bruno Simon [Project](https://github.com/brunosimon/infinite-world).
-
 ## Demo
 [Link](https://world-explorer-beta.vercel.app/)
 
@@ -11,6 +9,7 @@ Inspired by Bruno Simon [Project](https://github.com/brunosimon/infinite-world).
 ![Screenshot 2023-06-18 194537](https://github.com/gustass5/WorldExplorer/assets/10740681/bc98075a-58c3-4ac5-bfb3-3ffd005d23fb)
 ![Screenshot 2023-06-18 195015](https://github.com/gustass5/WorldExplorer/assets/10740681/d55a9a73-ca58-4990-af62-bd2f79129c70)
 
+Inspired by Bruno Simon [Project](https://github.com/brunosimon/infinite-world).
 
 ## Launch the project
 ```
